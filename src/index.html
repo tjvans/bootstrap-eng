@@ -8,9 +8,35 @@
     <script type="module" src="js/main.js"></script>
 </head>
 <body>
-    <div class="container py-4 px-3 mx-auto">
-        <h1>Bootstrap-eng Project Title</h1>
-        <button class="btn btn-primary">Primary button</button>
-    </div>
+    <!--Navbar-->
+    <nav class="navbar navbar-expand-md bg-body-tertiary sticky-top">
+        <div class="container-sm">
+            <a class="navbar-brand flex-grow-1" href="#">
+                <img src="/src/assets/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-middle">
+                <span class="d-none d-sm-inline-block">Company Name</span>
+            </a>
+            
+            <button class="navbar-toggler flex-grow-6 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            
+            <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas-header">
+                  <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Responsive offcanvas</h5>
+                  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body justify-content-end">
+                    <a class="nav-link mx-2" href="#">Design</a>
+                    <a class="nav-link mx-2" href="#">Manufacturing</a>
+                    <a class="nav-link mx-2" href="#">Firmware</a>
+                    <a class="nav-link mx-2" href="#">Support</a>
+                </div>
+            </div>
+
+            <button type="button" class="btn btn-warning text-nowrap ms-2">Contact Us</button>
+        </div>
+    </nav>
+    <!--Hero-->
+
 </body>
 </html>
