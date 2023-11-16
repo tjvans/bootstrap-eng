@@ -1,3 +1,6 @@
+# Github config files
+.github/
+
 node_modules/
 .parcel-cache/
 dist/
