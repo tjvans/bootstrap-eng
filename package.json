@@ -10,10 +10,14 @@
   "author": "tjvans",
   "license": "ISC",
   "devDependencies": {
+    "@parcel/transformer-sass": "^2.10.3",
     "parcel": "^2.10.3"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
     "bootstrap": "^5.3.2"
+  },
+  "@parcel/resolver-default": {
+    "packageExports": true
   }
 }
