@@ -1,20 +1,6 @@
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
-$custom-colors: (
-    "primary-blue": #0C1B31,
-    "secondary-green": #1F331F,
-    "tertiary-blue": #BFCDE0,
-    "highlight": #A24936,
-    "off-white": #FEFCFD
-);
-
-$theme-colors: map-merge($theme-colors, $custom-colors);
-
-body {
-    $font-family: "Open Sans"
-}
-
 /* open-sans-regular - latin */
 @font-face {
     font-display: swap; /* Check https://developer.mozilla.org/en-US/docs/Web/CSS/@font-face/font-display for other options. */
@@ -33,4 +19,20 @@ body {
     src: url('../assets/fonts/merriweather-sans-v26-latin-regular.woff2') format('woff2'), /* Chrome 36+, Opera 23+, Firefox 39+, Safari 12+, iOS 10+ */
          url('../assets/fonts/merriweather-sans-v26-latin-regular.ttf') format('truetype'); /* Chrome 4+, Firefox 3.5+, IE 9+, Safari 3.1+, iOS 4.2+, Android Browser 2.2+ */
   }
+
+$custom-colors: (
+    "primary-blue": #0C1B31,
+    "secondary-green": #1F331F,
+    "tertiary-blue": #BFCDE0,
+    "highlight": #A24936,
+    "off-white": #FEFCFD
+);
+
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+body {
+    $font-family: "Open Sans"
+}
+
+
   
