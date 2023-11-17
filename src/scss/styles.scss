@@ -44,6 +44,12 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 // Custom CSS
 body {
-    background-color: $primary
+    background-color: $primary;
 }
 
+#hero{
+    background-image: url('/src/assets/images/ishfaq-ahmed-motherboard-unsplash.jpg');
+    background-size: cover;
+    background-position: center;
+    height: 500px;
+}
