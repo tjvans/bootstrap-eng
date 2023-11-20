@@ -19,9 +19,7 @@
 }
 
 //BOOTSTRAP
-// enable css grid
-    $enable-cssgrid: true;
-    
+
 // override default colors
     $primary: #0C1B31;
     $secondary: #1F331F;
@@ -80,5 +78,26 @@ body {
     .d-flex > * {
         position: relative;
         z-index: 100;
+    }
+}
+
+#new-designs {
+    min-height: 250px;
+    place-content: center;
+    position: relative;
+    isolation: isolate;
+    background-size: cover;
+    background-image: url("/src/assets/images/sigmund-_dJCBtdUu74-unsplash.jpg");
+
+    &::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        z-index: -1;
+        background: $secondary;
+        @supports (mix-blend-mode: screen) {
+            opacity: .8;
+            mix-blend-mode: screen;
+        }
     }
 }
