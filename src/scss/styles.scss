@@ -47,9 +47,35 @@ body {
     background-color: $primary;
 }
 
+.navbar {
+    background-color: linear-gradient(to bottom, #1F331F, #000000)
+}
+
 #hero{
-    background-image: url('/src/assets/images/ishfaq-ahmed-motherboard-unsplash.jpg');
+    background-image: url('/src/assets/images/ishfaq-ahmed-motherboard-unsplash-cropped.jpg');
     background-size: cover;
     background-position: center;
-    height: 500px;
+    height: 80svh;
+    
+    .d-flex::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 0;
+        height: 100%;
+        width: 100%;
+        background-color: $primary;
+        opacity: 0.6;
+        z-index: 1;
+
+        @supports (mix-blend-mode: hard-light) {
+            opacity: 1;
+            mix-blend-mode: hard-light;
+        }
+    }
+
+    .d-flex > * {
+        position: relative;
+        z-index: 100;
+    }
 }
