@@ -84,8 +84,11 @@ body {
 
     .card {
         min-height: 250px;
+        height: auto;
+        width: auto;
         isolation: isolate;
         background-size: cover;
+        overflow: hidden;
     
         &::before {
             content: "";
