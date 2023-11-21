@@ -80,8 +80,16 @@ body {
     }
 }
 
-#design {
+#line {
+    position: absolute;
+    height: 20vh;
+    width: 1.5rem;
+    background: var(--bs-highlight);
+    z-index: -1;
+    transform: translateY(-50%);
+}
 
+#design {
     .card {
         min-height: 250px;
         height: auto;
