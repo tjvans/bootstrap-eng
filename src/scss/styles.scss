@@ -23,7 +23,7 @@
 // override default colors
     $primary: #0C1B31;
     $secondary: #1F331F;
-
+    
 // override default fonts
     $font-family-base: "Merriweather Sans";
 
@@ -31,7 +31,6 @@
     @import "../../node_modules/bootstrap/scss/functions";
     @import "../../node_modules/bootstrap/scss/variables";
     @import "../../node_modules/bootstrap/scss/variables-dark";
-
 
 $custom-theme-colors: (
     "tertiary-blue": #BFCDE0,
@@ -45,11 +44,11 @@ $theme-colors: map-merge($theme-colors, $custom-theme-colors);
 
 // Custom CSS
 body {
-    background-color: $primary;
+    background-color: var(--bs-primary);
 }
 
 .primary-background {
-    background: $primary;
+    background: var(--bs-primary);
 }
 
 #hero{
@@ -65,7 +64,7 @@ body {
         left: 0;
         height: 90svh;
         width: 100%;
-        background-color: $primary;
+        background-color: var(--bs-primary);
         opacity: 0.6;
         z-index: 1;
 
@@ -82,31 +81,35 @@ body {
 }
 
 #design {
-    
+
     .card {
         min-height: 250px;
-        width: 100%;
-        object-fit: cover;
-        position: relative;
-        place-content: center;
         isolation: isolate;
         background-size: cover;
     
-        h5, p {
-            color: $secondary;
-    
+        &::before {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: -1;
+            opacity: .6;
+            background: var(--bs-secondary);
         }
-    
         &::after {
             content: "";
             position: absolute;
             inset: 0;
             z-index: 1;
-            background: $secondary;
+            background: var(--bs-secondary);
             @supports (mix-blend-mode: screen) {
-                opacity: .8;
+                opacity: 1;
                 mix-blend-mode: screen;
             }
+        }
+
+        h3, p {
+            color: var(--bs-off-white);
+            text-shadow: var(--bs-secondary) 1px 0 30px;
         }
     }
     #new-designs {
@@ -119,6 +122,7 @@ body {
         background-image: url("/src/assets/images/mika-baumeister-Wpnoqo2plFA-unsplash.jpg");
     }
     #rapid-prototyping{
+        background-position: 50%;
         background-image: url("/src/assets/images/louis-reed-wSTCaQpiLtc-unsplash.jpg");
     }
 }
