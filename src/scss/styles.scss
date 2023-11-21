@@ -81,23 +81,67 @@ body {
     }
 }
 
-#new-designs {
-    min-height: 250px;
-    place-content: center;
-    position: relative;
-    isolation: isolate;
-    background-size: cover;
-    background-image: url("/src/assets/images/sigmund-_dJCBtdUu74-unsplash.jpg");
-
-    &::after {
-        content: "";
-        position: absolute;
-        inset: 0;
-        z-index: -1;
-        background: $secondary;
-        @supports (mix-blend-mode: screen) {
-            opacity: .8;
-            mix-blend-mode: screen;
+#design {
+    
+    .card {
+        min-height: 250px;
+        width: 100%;
+        object-fit: cover;
+        position: relative;
+        place-content: center;
+        isolation: isolate;
+        background-size: cover;
+    
+        h5, p {
+            color: $secondary;
+    
+        }
+    
+        &::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            z-index: 1;
+            background: $secondary;
+            @supports (mix-blend-mode: screen) {
+                opacity: .8;
+                mix-blend-mode: screen;
+            }
         }
     }
+    #new-designs {
+        background-image: url("/src/assets/images/sigmund-_dJCBtdUu74-unsplash.jpg");
+    }
+    #design-input{
+        background-image: url("/src/assets/images/charlesdeluvio-Lks7vei-eAg-unsplash.jpg");
+    }
+    #cost-down {
+        background-image: url("/src/assets/images/mika-baumeister-Wpnoqo2plFA-unsplash.jpg");
+    }
+    #rapid-prototyping{
+        background-image: url("/src/assets/images/louis-reed-wSTCaQpiLtc-unsplash.jpg");
+    }
 }
+
+
+
+// #new-designs {
+//     min-height: 250px;
+//     place-content: center;
+//     position: relative;
+//     isolation: isolate;
+//     background-size: cover;
+//     background-image: url("/src/assets/images/sigmund-_dJCBtdUu74-unsplash.jpg");
+
+//     &::after {
+//         content: "";
+//         position: absolute;
+//         inset: 0;
+//         z-index: -1;
+//         background: $secondary;
+//         @supports (mix-blend-mode: screen) {
+//             opacity: .8;
+//             mix-blend-mode: screen;
+//         }
+//     }
+// }
