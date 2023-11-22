@@ -10,7 +10,7 @@
 <body>
     <header>
     <!--Navbar-->
-        <nav class="navbar navbar-expand-md  fixed-top" id="nav">
+        <nav class="navbar navbar-expand-md bg-primary fixed-top" id="nav">
             <div class="container-md">
                 <a class="navbar-brand flex-grow-1" href="#">
                     <img src="/src/assets/logos/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-middle">
@@ -29,7 +29,7 @@
                     <div class="offcanvas-body justify-content-end">
                         <a class="nav-link mx-2" href="#design">Design</a>
                         <a class="nav-link mx-2" href="#manufacturing">Manufacturing</a>
-                        <a class="nav-link mx-2" href="#">Firmware</a>
+                        <a class="nav-link mx-2" href="#firmware">Firmware</a>
                         <a class="nav-link mx-2" href="#support">Support</a>
                     </div>
                 </div>
@@ -89,16 +89,17 @@
     
     <!--Manufacturing-->
     <section id="manufacturing">
-        <div class="container-expand bg-tertiary-blue text-secondary mb-5">
-            <div class="container-md">
+        <div class="container-expand bg-body-tertiary text-off-white mb-5">
+            <div class="container-md p-5">
 
-                <h1 class="py-5">Manufacturing</h2>
-                <div class="row row-cols-1 row-cols-lg-2 align-items-md-center g-5 py-5">
+                
+                <div class="row row-cols-1 row-cols-lg-2 align-items-md-center g-5">
                     <div class="col d-flex flex-column align-items-start gap-2">
+                        <h1 class="pb-4">Manufacturing</h2>
                         <h2 class="mb-2">Left-aligned title explaining these awesome features</h2>
                         <p class="fs-3">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     </div>
-                    <div class="col pb-3">
+                    <div class="col">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
                             <div class="col d-flex flex-column gap-2">
                                 <img src="/src/assets/svgs/lightbulb.svg" class="text-bg-highlight bg-gradient fs-4 rounded-3 p-2 mb-2" width="60rem" height="60rem"/>
@@ -128,31 +129,38 @@
         </div>
     </section>
 
+    <!--Firmware-->
+    <section id="firmware">
+        <div class="container-md">
+
+        </div>
+    </section>
+
     <!--Support-->
     <section id="support">
         <div class="container-md text-center">
             <div class="card justify-content-center">
-                <div class="card-body bg-tertiary-blue">
-                    <h1 class="text-secondary p-4">Support</h1>
+                <div class="card-body bg-body-tertiary">
+                    <h1 class="text-off-white p-4">Support</h1>
                     <div class="row justify-content-around">
 
-                        <div class="card bg-transparent border border-secondary p-0 mb-4" style="width: 25rem;">
+                        <div class="card bg-transparent border border-tertiary-blue p-0 mb-4" style="width: 25rem;">
                             <img src="/src/assets/images/john-cameron-kY2H30v6Bs4-unsplash.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="text-secondary">Rapic Design</h4>
-                            <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h4 class="text-off-white">Rapic Design</h4>
+                            <p class="card-text text-off-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
                     
-                        <div class="card bg-transparent border-0 p-0 mb-4" style="width: 25rem;">
+                        <div class="card bg-transparent border border-light-subtle p-0 mb-4" style="width: 25rem;">
                             <img src="/src/assets/images/dan-cristian-padure-dsJtesSBCeY-unsplash.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h4 class="text-secondary">Product Qualification</h4>
-                            <p class="card-text text-secondary">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                                <h4 class="text-off-white">Product Qualification</h4>
+                            <p class="card-text text-off-white">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
                         </div>
 
-                        <div class="card bg-transparent border-0 p-0 mb-4" style="width: 25rem;">
+                        <div class="card bg-tertiary-blue border-0 p-0 mb-4" style="width: 25rem;">
                             <img src="/src/assets/images/stellrweb-djb1whucfBY-unsplash.jpg" class="card-img-top" alt="...">
                             <div class="card-body">
                                 <h4 class="text-secondary">Optimise Costs</h4>
