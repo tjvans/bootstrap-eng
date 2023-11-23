@@ -69,7 +69,7 @@
     $offcanvas-horizontal-width: fit-content;
 
 // Import all of Bootstrap's CSS
-@import "bootstrap/scss/bootstrap";
+@import "/node_modules/bootstrap/scss/bootstrap";
 
 // Custom CSS
 html {
