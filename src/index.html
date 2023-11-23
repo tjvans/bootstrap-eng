@@ -21,7 +21,7 @@
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="offcanvas offcanvas-end bg-primary" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas offcanvas-end bg-primary" data-bs-scroll="true" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
 
                     <div class="offcanvas-body justify-content-end font-size-h3 font-size-md-p" data-bs-toggle="offcanvas" >
                         <a class="nav-link mx-2" href="#design-h">Design</a>
@@ -31,7 +31,7 @@
                     </div>
                 </div>
 
-                <button type="button" class="btn btn-warning text-nowrap text-off-white bg-highlight bg-gradient border-0 ms-2">Contact Us</button>
+                <a class="nav-link mx-2" href="#contact-us"><button type="button" class="btn btn-warning text-nowrap text-off-white bg-highlight bg-gradient border-0 ms-2">Contact Us</button></a>
             </div>
         </nav>
     <!--Hero-->
@@ -139,8 +139,8 @@
                 <div class="col">
                     <div class="card border border-secondary" id="rapid-prototyping">
                         <div class="card-img-overlay">
-                            <h3 class="card-title py-2 p-sm-3 py-lg-4 px-lg-5">Rapid Prototyping</h3>
-                            <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h3 class="card-title py-2">Rapid Prototyping</h3>
+                            <p class="card-text text-start p-sm-3 py-lg-4 px-lg-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                 </div>
@@ -152,12 +152,11 @@
     <section class="py-4" id="manufacturing">
         <div class="container-expand bg-body-tertiary text-off-white">
             <div class="container-md py-5 px-5 px-md-0">
-
+                <h1 id="manufacturing-h">Manufacturing</h2>
                 <div class="row row-cols-1 row-cols-lg-2 align-items-md-center g-5">
-                    <div class="col d-flex flex-column align-items-start gap-2">
-                        <h1 id="manufacturing-h">Manufacturing</h2>
+                    <div class="col d-flex flex-column align-items-start gap-2 pt-4">
                         <h2 class="mb-2">Left-aligned title explaining these awesome features</h2>
-                        <p class="fs-3">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
+                        <p class="font-size-h4">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     </div>
                     <div class="col">
                         <div class="row row-cols-1 row-cols-md-2 g-4">
@@ -240,8 +239,84 @@
 
     <!--Form-->
     <section id="form">
-        <div class="container-md">
+        <div class="container-md border-top border-highlight p-3 mt-5">
+            <h1 id="contact-us">Contact Us</h1>
+            <div class="row pt-3 g-3 align-items-center">
+                <div class="col-auto">
+                    <div class="input-group">
+                        <span class="input-group-text">First</span>
+                        <input type="text" aria-label="First name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="input-group">
+                        <span class="input-group-text">Last name</span>
+                        <input type="text" aria-label="Last name" class="form-control">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="input-group">
+                        <span class="input-group-text">E-mail</span>
+                        <input type="email" class="form-control" id="exampleFormControlInput1" placeholder="name@example.com">
+                     </div>
+                </div>
+            </div>
+           
+            <div class="my-3">
+                <label for="exampleFormControlTextarea1" class="form-label">Project description:</label>
+                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
 
+            <div class="row g-3 py-2 align-items-center">
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadioDefault1" value="role1">
+                        <label class="form-check-label" for="flexRadioDefault1">
+                            Consultant role 1
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio2" value="role2">
+                        <label class="form-check-label" for="flexRadio2">
+                            Consultant role 2
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio3" value="role3">
+                        <label class="form-check-label" for="flexRadio3">
+                            Consultant role 3
+                        </label>
+                    </div>
+                </div>
+                <div class="col-6">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="flexRadio" id="flexRadio4" value="role4">
+                        <label class="form-check-label" for="flexRadio4">
+                            Consultant role 4
+                        </label>
+                    </div>
+                </div>
+            </div>
+                
+            <div class="row g-3 py-3 align-items-center">
+                <div class="col-auto">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text" id="basic-addon1">Deadline</span>
+                        <input type="text" class="form-control" placeholder="DD / MM / YYYY" aria-label="Deadline" aria-describedby="basic-addon1">
+                    </div>
+                </div>
+                <div class="col-auto">
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">Budget</span>
+                        <input type="text" class="form-control" id="budget" aria-label="Amount (to the nearest dollar)">
+                    </div>
+                </div>
+            </div>
+            <button type="submit" class="btn btn-highlight bg-gradient">Submit</button>   
         </div>
     </section>
 

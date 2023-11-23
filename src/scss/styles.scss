@@ -73,7 +73,7 @@
 
 // Custom CSS
 html {
-    scroll-padding-top: 64px; // offset navbar with position: fixed
+    scroll-padding-top: 70px; // offset navbar with position: fixed
   }
 
 body {
@@ -140,7 +140,7 @@ body {
             position: absolute;
             inset: 0;
             z-index: -1;
-            opacity: .6;
+            opacity: .7;
             background: var(--bs-secondary);
         }
         &::after {
@@ -157,7 +157,10 @@ body {
 
         h3, p {
             color: var(--bs-off-white);
-            text-shadow: var(--bs-secondary) 1px 0 30px;
+            text-shadow: 1px 1px 30px var(--bs-secondary);
+        }
+        p {
+            font-size: 1.3rem;
         }
     }
     #new-designs {
@@ -194,7 +197,9 @@ body {
                 object-fit: cover;
             }
         }
-    }
-    
-    
+    }   
+}
+
+#form {
+    min-height: 80svh;
 }
