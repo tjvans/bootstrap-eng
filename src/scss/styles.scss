@@ -32,23 +32,60 @@
     @import "../../node_modules/bootstrap/scss/variables";
     @import "../../node_modules/bootstrap/scss/variables-dark";
 
-$custom-theme-colors: (
-    "tertiary-blue": #BFCDE0,
-    "highlight": #A24936,
-    "off-white": #FEFCFD,
-);
-$theme-colors: map-merge($theme-colors, $custom-theme-colors);
+    $custom-theme-colors: (
+        "tertiary-blue": #BFCDE0,
+        "highlight": #A24936,
+        "off-white": #FEFCFD,
+    );
+    $theme-colors: map-merge($theme-colors, $custom-theme-colors);
+
+// add responsive font-size class
+    @import "../../node_modules/bootstrap/scss/functions";
+    @import "../../node_modules/bootstrap/scss/maps";
+    @import "../../node_modules/bootstrap/scss/mixins";
+    @import "../../node_modules/bootstrap/scss/utilities";
+
+    $utilities: map-merge(
+        $utilities,
+        (
+            "font-size": (
+                property: font-size,
+                responsive: true,
+                values: (
+                    p: 1rem,
+                    h6: 1.2rem,
+                    h5: 1.44rem,
+                    h4: 1.728rem,
+                    h3: 2.074rem,
+                    h2: 2.488rem,
+                    h1: 2.986rem
+                )
+            )
+        )
+    );
+    @import "../../node_modules/bootstrap/scss/utilities/api";
+
+// override offcanvas width
+    $offcanvas-horizontal-width: fit-content;
 
 // Import all of Bootstrap's CSS
 @import "bootstrap/scss/bootstrap";
 
 // Custom CSS
+html {
+    scroll-padding-top: 64px; // offset navbar with position: fixed
+  }
+
 body {
     background-color: var(--bs-dark);
 }
 
 .primary-background {
     background: var(--bs-primary);
+}
+
+#offcanvasResponsive {
+
 }
 
 #hero{

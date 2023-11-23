@@ -18,19 +18,19 @@
                 </a>
                 
                 <button class="navbar-toggler flex-grow-6 mx-3" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasResponsive" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+                    <span class="navbar-toggler-icon"></span>
                 </button>
                 
-                <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
+                <div class="offcanvas offcanvas-end bg-primary" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasResponsive" aria-labelledby="offcanvasResponsiveLabel">
                     <div class="offcanvas-header">
-                    <h5 class="offcanvas-title" id="offcanvasResponsiveLabel">Menu</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
+                        <h5 class="offcanvas-title" id="offcanvasResponsiveLabel"></h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" data-bs-target="#offcanvasResponsive" aria-label="Close"></button>
                     </div>
-                    <div class="offcanvas-body justify-content-end">
-                        <a class="nav-link mx-2" href="#design">Design</a>
-                        <a class="nav-link mx-2" href="#manufacturing">Manufacturing</a>
-                        <a class="nav-link mx-2" href="#firmware">Firmware</a>
-                        <a class="nav-link mx-2" href="#support">Support</a>
+                    <div class="offcanvas-body justify-content-end font-size-h3 font-size-md-p" data-bs-toggle="offcanvas" >
+                        <a class="nav-link mx-2" href="#design-h">Design</a>
+                        <a class="nav-link mx-2" href="#manufacturing-h">Manufacturing</a>
+                        <a class="nav-link mx-2" href="#firmware-h">Firmware</a>
+                        <a class="nav-link mx-2" href="#support-h">Support</a>
                     </div>
                 </div>
 
@@ -47,24 +47,23 @@
     </header>
 
     <!--Design-->
-    <section id="design">
-        <div class="container-md py-5">
-            <div id="line"></div>
-            <h1>Design</h1>
-            <div class=" row row-cols-1 row-cols-lg-2 g-4 text-center">
+    <section class="py-4" id="design">
+        <div class="container-md">
+            <h1 id="design-h">Design</h1>
+            <div class="row row-cols-1 row-cols-lg-2 g-4 text-center">
                 <div class="col">
                     <div class="card border border-secondary" id="new-designs">
                         <div class="card-img-overlay">
-                          <h3 class="card-title py-2">New Designs</h3>
-                          <p class="card-text text-start p-sm-3 py-lg-4 px-lg-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h3 class="card-title py-2">New Designs</h3>
+                            <p class="card-text text-start p-sm-3 py-lg-4 px-lg-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
-                      </div>
                     </div>
-                    <div class="col">
-                      <div class="card border border-secondary" id="design-input">
+                </div>
+                <div class="col">
+                    <div class="card border border-secondary" id="design-input">
                         <div class="card-img-overlay">
-                          <h3 class="card-title py-2">Design Input</h3>
-                          <p class="card-text text-start p-sm-3 py-lg-4 px-lg-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h3 class="card-title py-2">Design Input</h3>
+                            <p class="card-text text-start p-sm-3 py-lg-4 px-lg-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                 </div>
@@ -74,27 +73,28 @@
                           <h3 class="card-title py-2">Cost Down</h3>
                           <p class="card-text text-start p-sm-3 py-lg-4 px-lg-5">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
-                      </div>
                     </div>
-                    <div class="col">
-                      <div class="card border border-secondary" id="rapid-prototyping">
+                </div>
+                <div class="col">
+                    <div class="card border border-secondary" id="rapid-prototyping">
                         <div class="card-img-overlay">
-                          <h3 class="card-title py-2 p-sm-3 py-lg-4 px-lg-5">Rapid Prototyping</h3>
-                          <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <h3 class="card-title py-2 p-sm-3 py-lg-4 px-lg-5">Rapid Prototyping</h3>
+                            <p class="card-text text-start">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
                         </div>
                     </div>
                 </div>
+            </div>
         </div>
     </section>
     
     <!--Manufacturing-->
-    <section id="manufacturing">
-        <div class="container-expand bg-body-tertiary text-off-white mb-5">
+    <section class="py-4" id="manufacturing">
+        <div class="container-expand bg-body-tertiary text-off-white">
             <div class="container-md p-5 p-md-0 py-md-5">
 
                 <div class="row row-cols-1 row-cols-lg-2 align-items-md-center g-5">
                     <div class="col d-flex flex-column align-items-start gap-2">
-                        <h1 class="pb-4">Manufacturing</h2>
+                        <h1 id="manufacturing-h">Manufacturing</h2>
                         <h2 class="mb-2">Left-aligned title explaining these awesome features</h2>
                         <p class="fs-3">Paragraph of text beneath the heading to explain the heading. We'll add onto it with another sentence and probably just keep going until we run out of words.</p>
                     </div>
@@ -129,22 +129,22 @@
     </section>
 
     <!--Firmware-->
-    <section id="firmware">
+    <section class="py-4" id="firmware">
         <div class="container-md">
             <div class="row-col-2">
-                <h1>Firmware</h1>
+                <h1 id="firmware-h">Firmware</h1>
                 <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Possimus, eius. Aperiam inventore repellendus modi similique, animi quam ratione obcaecati iure temporibus alias. Sequi ducimus commodi veritatis illo, dolor iusto nam.</p>
-                <img src="/src/assets/images/clay-banks-8q6e5hu3Ilc-unsplash.jpg" class="pb-5" alt="" width="100%">
+                <img src="/src/assets/images/clay-banks-8q6e5hu3Ilc-unsplash.jpg" alt="" width="100%">
             </div>
         </div>
     </section>
 
     <!--Support-->
-    <section id="support">
+    <section class="py-4" id="support">
         <div class="container-md text-center">
             <div class="card justify-content-center">
                 <div class="card-body bg-body-tertiary">
-                    <h1 class="text-off-white p-4">Support</h1>
+                    <h1 class="text-off-white pb-4" id="support-h">Support</h1>
                     <div class="row justify-content-around">
 
                         <div class="card bg-transparent border border-tertiary-blue p-0 mb-4" style="width: 25rem;">
